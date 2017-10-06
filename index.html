@@ -3,7 +3,16 @@
 		<title>peep peep</title>
 		<meta charset="utf8"/>
 		<style>
-		html, body {min-height:100%;margin:0; background:url('pardalotus.jpg') no-repeat 50% 50%; background-size:cover;}
+html, body {min-height:100%;margin:0; color:white; font-family:sans-serif;}
+#bg {width:100vw; height:100vh; position: absolute; overflow:hidden; z-index:-1;}
+#bg>div {width:calc(100vw + 16px);height:calc(100vh + 16px);position:absolute; left:-8px; top:-8px;background:url('pardalotus.jpg') no-repeat 50% 50%; background-size:cover;filter:brightness(20%) blur(4px);}
+main {box-sizing: border-box; max-width:800px; margin:auto; padding:4vh 4vmin;}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<div id="bg"><div></div></div>
+		<main>
+			hi
+		</main>
+	</body>
 </html>
